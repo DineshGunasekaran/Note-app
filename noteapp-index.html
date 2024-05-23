@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Note App</title>
+  <link rel="stylesheet" href="noteapp-style.css">
+  <script src="https://kit.fontawesome.com/e506c17f75.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="controlArea">
+      <!-- Add button -->
+      <button type="button" id="addBtn" onclick="btnAction()"><i class="fa-solid fa-plus"></i></button>
+      <!-- Circles -->
+      <div class="circles" id="circles">
+        <div class="circle red"></div>
+        <div class="circle blue"></div>
+        <div class="circle green"></div>
+        <div class="circle yellow"></div>
+        <div class="circle orange"></div>
+      </div>
+    </div>
+    <div class="contentArea">
+      <!-- Need to create the below content by add button onclick function -->
+      <!-- <div class="note">
+        <div id="tickDiv">
+          <input type="text" placeholder="Enter title">
+          <i id="tickMark" class="fa-solid fa-check" onclick="saveNote(this)"></i>
+        </div>
+        <textarea class="textAreaEle" cols="30" rows="12"></textarea>
+        
+        <div class="controlIcons">
+          <i onclick="updateStar(this)" class="fa-solid fa-star"></i>
+          <i id="delIcon" onclick="deleteNote(this)" class="fa-solid fa-trash"></i>
+          <i class="fa-solid fa-file-pen editIcons"></i>
+        </div>
+      </div> -->
+      
+      
+    </div>
+  </div>
+  <script src="notescript.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: #f0ecec;
+}
+
+.container {
+  width: 90%;
+  min-height: 670px;
+  height: 90%;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 30px auto 30px;
+  display: flex;
+}
+
+.container .controlArea {
+  width: 12%;
+  height: 100%;
+  border-right: 1px solid #d8d7d7;
+  
+}
+
+#addBtn {
+  border: 0;
+  justify-content: center;
+  display: flex;
+  margin: 40px auto 20px;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform .3s ease-in-out;
+  font-weight: 900;
+}
+
+#addBtn:hover {
+  box-shadow: 2px 2px 3px rgb(177, 164, 164);
+}
+
+#addBtn:active {
+  transform: rotate(360deg);
+  /* animation: rotateAddIcon 2s infinite; */
+}
+
+.contentArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  padding: 20px;
+  margin: 70px auto 30px;
+  overflow: auto;
+  
+}
+
+.contentArea .note {
+  max-width: 300px;  
+  max-height: 338px;
+  border-radius: 16px;
+  background-color: #e8c088;
+  padding: 10px;
+  margin: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+.note .textAreaEle {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  resize: none;
+  color: #000;
+  padding: 4px;
+  cursor: default;
+  font-size: 14px;
+  overflow-y: auto;
+}
+
+#tickMark {
+  color: rgb(10, 246, 45);
+  display: none;
+  position: sticky;
+}
+
+/* Circles  */
+.circles:active {
+  display: none;
+}
+
+.circles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  margin: 20px auto 30px;
+  padding: 10px;
+}
+
+#tickDiv {
+  width: 100%;
+  display: flex;
+  /* justify-content: end; */
+  position: relative;
+  /* border: 1px solid black; */
+}
+
+#tickDiv input {
+  flex: 1;
+  padding: 10px;
+  outline: 0;
+  border: 0;
+  border-radius: 4px;
+  background-color: #f0ecec;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+#tickDiv #tickMark {
+  color: green;
+  cursor: pointer;
+  margin-left: 4px;
+  margin-top: 10px;
+  display: block;
+}
+
+
+.controlIcons {
+  /* margin-top: 10px; */
+  /* margin-bottom: 20px; */
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  text-align: center;
+}
+ 
+.controlIcons i {
+  background: #383737;
+  padding: 14px;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid #f0ecec;
+  cursor: pointer;
+}
+
+/* .controlIcons i:nth-child(1):hover,:focus {
+  color: gold;
+  background: #fff;
+} */
+
+.controlIcons i:nth-child(2):hover,:focus {
+  color: red;
+  background: #fff;
+}
+
+.controlIcons i:nth-child(3):hover,:focus {
+  color: black;
+  background: #fff;
+}
+
+/* Blur effect */
+.blur-effect {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+
+
+.circle {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 0 10px;
+  transition: transform 0.5s ease; /* Add smooth transition */
+}
+
+
+.circle.red {
+  background-color: red;
+}
+
+.circle.blue {
+  background-color: blue;
+}
+
+.circle.green {
+  background-color: green;
+}
+
+.circle.yellow {
+  background-color: yellow;
+}
+
+.circle.orange {
+  background-color: orange;
+}
+
+
+
+/* For add button rotation animation
+@keyframes rotateAddIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(45deg);
+  }
+  25% {
+    transform: rotate(80deg);
+  }
+  40% {
+    transform: rotate(150deg);
+  }
+  50% {
+    transform: rotate(190deg);
+  }
+  70% {
+    transform: rotate(210deg);
+  }
+  80% {
+    transform: rotate(250deg);
+  }
+  90% {
+    transform: rotate(290deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
