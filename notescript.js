@@ -176,11 +176,12 @@ function deleteNote(ele) {
 
 // update star
 function updateStar(ele) {
-  if (ele.style.color == "" || ele.style.color == "white") {
-    ele.style.color = "gold";
-    ele.style.background = "white";
-  } else if (ele.style.color == "gold") {
-    ele.style.color = "white";
-    ele.style.background = "black";
+  let starElement = event.target;
+  if (starElement.style.color == "" || starElement.style.color == "white") {
+    starElement.style.color = "gold";
+    starElement.style.background = "white";
+  } else if (starElement.style.color == "gold") {
+    starElement.style.color = "white";
+    starElement.style.background = "black";
   }
 }
